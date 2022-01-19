@@ -7,23 +7,7 @@
     <meta name="viewport" content="width=1450">
     <title>SUB2_MENU</title>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".tab_content").hide();
-            $("ul.tabs li:first").addClass("active").show();
-            $(".tab_content:first").show();
-            //On Click Event
-            $("ul.tabs li").click(function () {
-                $("ul.tabs li").removeClass("active");
-                $(this).addClass("active");
-                $(".tab_content").hide();
-                var activeTab = $(this).find("a").attr("href");
-                $(activeTab).fadeIn();
-                return false;
-            });
-
-        });
-    </script>
+    <script src="js/tab.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/swiper.css">
